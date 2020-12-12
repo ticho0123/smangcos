@@ -76,7 +76,7 @@
                                         <h4>Visibility</h4>
                                     </label>
                                     <p>
-                                        {{$product->isPublic = 'no' ? 'Private' : 'Public'}}
+                                        {{$product->isPublic = 'no' ? 'Public' : 'Private'}}
                                     </p>
                                 </div>
                             </div>
