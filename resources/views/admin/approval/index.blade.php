@@ -17,7 +17,7 @@
                     {{ __('Design Private') }}
                 </h4>
             </div>
-            <div class="card-body">
+            <div class="card-body d-inline-flex">
 
                 @foreach($privates as $key => $private)
                     <div class="col-lg-4">
@@ -29,6 +29,9 @@
                                 <a href="{{route('approval.show',$private->id)}}" class="btn btn-sm btn-info">
                                     Detail
                                 </a>
+                                <button type="button" class="btn btn-sm {{approve_status($private->approve)}}">
+                                    {{$private->approve}}
+                                </button>
                             </div><!-- /.col-lg-4 -->
                         </div>
                     </div>
@@ -42,7 +45,7 @@
                     {{ __('Design Public') }}
                 </h4>
             </div>
-            <div class="card-body">
+            <div class="card-body d-inline-flex">
                 @foreach($publics as $key => $private)
                     <div class="col-lg-4">
                         <div class="card">
@@ -53,6 +56,9 @@
                                 <a href="{{route('approval.show',$private->id)}}" class="btn btn-sm btn-info">
                                     Detail
                                 </a>
+                                <button type="button" class="btn btn-sm {{approve_status($private->approve)}}">
+                                    {{$private->approve}}
+                                </button>
                             </div><!-- /.col-lg-4 -->
                         </div>
                     </div>

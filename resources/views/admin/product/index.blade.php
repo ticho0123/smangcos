@@ -9,20 +9,18 @@
         Buat Design
     </a>
     <div class="mb-5"></div>
-
+    @if (session('status'))
+        <div class="alert alert-success" role="alert">
+            {{ session('status') }}
+        </div>
+    @endif
     <div class="card mb-5">
         <div class="card-header">
             <h4>
                 {{ __('Design Private') }}
             </h4>
         </div>
-        <div class="card-body">
-            @if (session('status'))
-                <div class="alert alert-success" role="alert">
-                    {{ session('status') }}
-                </div>
-            @endif
-
+        <div class="card-body d-inline-flex">
             @foreach($privates as $key => $private)
                 <div class="col-lg-4">
                     <div class="card">
@@ -46,12 +44,7 @@
                 {{ __('Design Public') }}
             </h4>
         </div>
-        <div class="card-body">
-            @if (session('status'))
-                <div class="alert alert-success" role="alert">
-                    {{ session('status') }}
-                </div>
-            @endif
+        <div class="card-body d-inline-flex">
 
             @foreach($publics as $key => $private)
                 <div class="col-lg-4">

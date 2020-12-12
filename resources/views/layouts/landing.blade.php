@@ -61,21 +61,10 @@
           -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
       }
-      .footer {
-      background: black;
-      width: 100%;
-      margin: auto;
-      text-align: center;
-      color: white;
-      font-size: 14px;
-      padding: 20px 0px;
-      margin-top: 180px;
-      margin-bottom: 20px;
-      }
 
-      .footer a {
-      color: white;
-      }
+        body{
+            padding: 0 !important;
+        }
 
     </style>
     <!-- Custom styles for this template -->
@@ -121,10 +110,19 @@
 @yield('content')
   <!-- FOOTER -->
   <!-- <div class="pt-5"></div> -->
-  <footer class="footer">
-        <p>copyright©️smangcoteam</p>
-        <a href="mailto:smangcoteam228@gmail.com">smangcoteam228@gmail.com</a>
+    <footer class="footer text-center text-light mt-5" style="background-color: black; padding: 5px">
+        <div class="container mt-3">
+            <p>
+                copyright©smangcoteam <br>
+                <span>
+                smangcoteam228@gmail.com
+                </span>
+            </p>
+        </div>
     </footer>
+{{--  <footer class=" mt-5 text-center" style="background-color: black">--}}
+{{--    <p>&copy; 2020 {{config('app.name')}}, Inc</p>--}}
+{{--  </footer>--}}
 </main>
       <script src="jquery-3.5.1.slim.min.js"></script>
       <script src="/template/js/bootstrap.bundle.min.js"></script>

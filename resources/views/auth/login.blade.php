@@ -3,7 +3,9 @@
 <form class="form-signin" method="POST" action="{{route('login')}}">
     @csrf
     <div class="text-center mb-4">
-        <img class="mb-4" src="/template/img/logo.png" alt="" width="250">
+    <a href="{{route('awal')}}">
+            <img class="mb-4" src="/template/img/logo.png" alt="" width="250">
+        </a>
         <h1 class="h3 mb-3 font-weight-normal">Login</h1>
     </div>
     @include('result')

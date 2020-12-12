@@ -37,21 +37,7 @@
                 font-size: 3.5rem;
             }
         }
-        .footer {
-      background: black;
-      width: 100%;
-      margin: auto;
-      text-align: center;
-      color: white;
-      font-size: 14px;
-      padding: 20px 0px;
-      margin-top: 180px;
-      margin-bottom: fixed-bottom;
-      }
 
-      .footer a {
-      color: white;
-      } 
     </style>
     <!-- Custom styles for this template -->
     <link href="/template_admin/dashboard.css" rel="stylesheet">
@@ -60,7 +46,7 @@
 <body>
     <nav class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
     <a class="navbar-brand text-dark" href="/">
-      <img src="/template/img/logo.png" width="253" />
+      <img src="/template/img/logo.png" width="250" />
     </a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
             data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,21 +95,33 @@
                 </div>
             </nav>
 
+
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Dashboard</h1>
                 </div>
-                @yield('content')
+                <div style="margin-bottom: 15%">
+                    @yield('content')
+                </div>
             </main>
         </div>
     </div>
+
+    <footer class="footer text-center fixed-bottom text-light" style="background-color: black;">
+        <div class="container mt-3">
+            <p>
+                copyright©smangcoteam <br>
+                <span>
+                smangcoteam228@gmail.com
+                </span>
+            </p>
+        </div>
+    </footer>
+
     <script src="jquery-3.5.1.slim.min.js"></script>
 
     <script src="/template_admin/dashboard.js"></script>
 </body>
-                <footer class="footer">
-                <p>copyright©️smangcoteam</p>
-                <a href="mailto:smangcoteam228@gmail.com">smangcoteam228@gmail.com</a>
-                </footer>
+
 </html>
