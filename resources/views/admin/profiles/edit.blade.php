@@ -10,7 +10,7 @@
                             {{ __('Profiles') }}
                         </h4>
                     <p>
-                        Kelola informasi pulau untuk mnengontrol, melindungi, dan mengamankan akun
+                        Kelola informasi akun anda dibawah ini
                     </p>
                     </div>
 

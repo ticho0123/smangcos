@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <title>{{config('app.name')}} · Login</title>
-    <link rel="shortcut icon" href="/t" />
+    <link rel="shortcut icon" href="/template/img/logo.png" />
 
     <!-- Bootstrap core CSS -->
     <link href="/template_admin/css/bootstrap.min.css" rel="stylesheet">

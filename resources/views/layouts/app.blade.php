@@ -37,7 +37,21 @@
                 font-size: 3.5rem;
             }
         }
+        .footer {
+      background: black;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      padding: 20px 0px;
+      margin-top: 180px;
+      margin-bottom: fixed-bottom;
+      }
 
+      .footer a {
+      color: white;
+      } 
     </style>
     <!-- Custom styles for this template -->
     <link href="/template_admin/dashboard.css" rel="stylesheet">
@@ -46,7 +60,7 @@
 <body>
     <nav class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
     <a class="navbar-brand text-dark" href="/">
-      <img src="/template/img/logo.png" width="250" />
+      <img src="/template/img/logo.png" width="253" />
     </a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
             data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,5 +122,8 @@
 
     <script src="/template_admin/dashboard.js"></script>
 </body>
-
+                <footer class="footer">
+                <p>copyright©️smangcoteam</p>
+                <a href="mailto:smangcoteam228@gmail.com">smangcoteam228@gmail.com</a>
+                </footer>
 </html>
